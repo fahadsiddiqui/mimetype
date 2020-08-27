@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/gabriel-vasile/mimetype"
+	"github.com/fahadsiddiqui/mimetype"
 )
 
 // To find the MIME type of some input, perform a detect.

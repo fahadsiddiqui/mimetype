@@ -1,7 +1,7 @@
 ## Upgrade from v0.3.x to v1.x
 In v1.x the detect functions no longer return the MIME type and extension as
 strings. Instead they return a pointer to a
-[MIME](https://godoc.org/github.com/gabriel-vasile/mimetype#MIME) struct.
+[MIME](https://godoc.org/github.com/fahadsiddiqui/mimetype#MIME) struct.
 The returned MIME pointer is never nil, even when a non-nil error is returned too.
 To get the string value of the MIME and the extension, call the
 `String()` and the `Extension()` methods.

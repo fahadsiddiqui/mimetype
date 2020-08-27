@@ -13,11 +13,11 @@
   <a href="https://travis-ci.org/gabriel-vasile/mimetype">
     <img alt="Build Status" src="https://travis-ci.org/gabriel-vasile/mimetype.svg?branch=master">
   </a>
-  <a href="https://godoc.org/github.com/gabriel-vasile/mimetype">
-    <img alt="Documentation" src="https://godoc.org/github.com/gabriel-vasile/mimetype?status.svg">
+  <a href="https://godoc.org/github.com/fahadsiddiqui/mimetype">
+    <img alt="Documentation" src="https://godoc.org/github.com/fahadsiddiqui/mimetype?status.svg">
   </a>
-  <a href="https://goreportcard.com/report/github.com/gabriel-vasile/mimetype">
-    <img alt="Go report card" src="https://goreportcard.com/badge/github.com/gabriel-vasile/mimetype">
+  <a href="https://goreportcard.com/report/github.com/fahadsiddiqui/mimetype">
+    <img alt="Go report card" src="https://goreportcard.com/badge/github.com/fahadsiddiqui/mimetype">
   </a>
   <a href="https://coveralls.io/github/gabriel-vasile/mimetype?branch=master">
     <img alt="Go report card" src="https://coveralls.io/repos/github/gabriel-vasile/mimetype/badge.svg?branch=master">
@@ -38,12 +38,12 @@
 
 ## Install
 ```bash
-go get github.com/gabriel-vasile/mimetype
+go get github.com/fahadsiddiqui/mimetype
 ```
 
 ## Usage
 There are quick [examples](EXAMPLES.md) and
-[GoDoc](https://godoc.org/github.com/gabriel-vasile/mimetype) for full reference.
+[GoDoc](https://godoc.org/github.com/fahadsiddiqui/mimetype) for full reference.
 
 
 ## Structure
@@ -56,11 +56,11 @@ zip, there is no need to check if it is a text file, but it is worth checking if
 it is an Microsoft Office file.
 
 To prevent loading entire files into memory, when detecting from a
-[reader](https://godoc.org/github.com/gabriel-vasile/mimetype#DetectReader)
-or from a [file](https://godoc.org/github.com/gabriel-vasile/mimetype#DetectFile)
+[reader](https://godoc.org/github.com/fahadsiddiqui/mimetype#DetectReader)
+or from a [file](https://godoc.org/github.com/fahadsiddiqui/mimetype#DetectFile)
 **mimetype** limits itself to reading only the header of the input.
 <div align="center">
-  <img alt="structure" src="https://github.com/gabriel-vasile/mimetype/blob/33abbe6cb78fe1a8486c92f95008a9e0fcef10a1/mimetype.gif?raw=true" width="88%">
+  <img alt="structure" src="https://github.com/fahadsiddiqui/mimetype/blob/33abbe6cb78fe1a8486c92f95008a9e0fcef10a1/mimetype.gif?raw=true" width="88%">
 </div>
 
 ## Performance
@@ -68,7 +68,7 @@ Thanks to the hierarchical structure, searching for common formats first,
 and limiting itself to file headers, **mimetype** matches the performance of
 stdlib `http.DetectContentType` while outperforming the alternative package.
 
-[Benchmarks](https://github.com/gabriel-vasile/mimetype/blob/d8628c314b5e59259afc7b0f4f84e6b31931b316/mimetype_test.go#L267)
+[Benchmarks](https://github.com/fahadsiddiqui/mimetype/blob/d8628c314b5e59259afc7b0f4f84e6b31931b316/mimetype_test.go#L267)
 were run on an Intel Xeon Gold 6136 24 core CPU @ 3.00GHz. Lower is better.
 ```bash
                             mimetype  http.DetectContentType      filetype
